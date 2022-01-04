@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.star {
+    border: 1px solid yellow;
+    box-shadow: 5px 5px 3px yellow;
+    border-radius: 5px;
+    padding: 22px;
+    position: relative;
+    height: 150px
+}
+
+.fa-star {
+    font-size: 30px;
+    cursor: pointer;
+    color: #e5e5e5;
+}
+
+.fa-star:nth-child(4) {
+    font-size: 40px;
+}
+
+.result {
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 20px;
+}

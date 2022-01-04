@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>rating app</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="star">
+        <div class="result"></div>
+        <i class="fa fa-star" id="star-1"></i>
+        <i class="fa fa-star" id="star-2"></i>
+        <i class="fa fa-star" id="star-3"></i>
+        <i class="fa fa-star" id="star-4"></i>
+        <i class="fa fa-star" id="star-5"></i>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#star-1").click(function () {
+            $(".fa-star").css("color", "#e5e5e5");
+            $("#star-1").css("color", "yellow");
+            $(".result").text("Terrible")
+        })
+        $("#star-2").click(function () {
+            $(".fa-star").css("color", "#e5e5e5");
+            $("#star-1,#star-2").css("color", "yellow");
+            $(".result").text("poor")
+        })
+        $("#star-3").click(function () {
+            $(".fa-star").css("color", "#e5e5e5");
+            $("#star-1,#star-2,#star-3").css("color", "yellow");
+            $(".result").text("Good");
+        })
+        $("#star-4").click(function () {
+            $(".fa-star").css("color", "#e5e5e5");
+            $("#star-1,#star-2,#star-3,#star-4").css("color", "yellow");
+            $(".result").text("Great");
+        })
+        $("#star-5").click(function () {
+            $(".fa-star").css("color", "#e5e5e5");
+            $(".fa-star").css("color", "yellow");
+            $(".result").text("Fantastic");
+        })
+    })
+</script>
+</body>
+</html>
